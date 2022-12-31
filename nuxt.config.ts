@@ -14,7 +14,16 @@ export default defineNuxtConfig({
           content: "Send & Receive Anonymous Messages on Pandabou",
         },
       ],
-      link: [],
+      link: [
+        {
+          rel: "preconnect",
+          href: "https://fonts.googleapis.com",
+        },
+        {
+          rel: "preconnect",
+          href: "https://fonts.gstatic.com",
+        },
+      ],
       noscript: [{ children: "Javascript is required" }],
     },
   },

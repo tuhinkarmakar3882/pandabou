@@ -1,10 +1,15 @@
 <template>
   <div>
     <NuxtPage />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,400&family=Raleway:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { useHead } from "nuxt/app";
 
 useHead({

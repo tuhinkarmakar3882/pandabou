@@ -49,6 +49,10 @@
     letter-spacing: var(--font-body-letter-spacing);
   }
 
+  p {
+    font-size: var(--spacing-standard-1x);
+  }
+
   small {
     line-height: 1;
     font-size: var(--font-size-small);

@@ -202,7 +202,7 @@ export default {
   padding-inline: var(--spacing-small-2x);
 
   * + * {
-    margin: var(--spacing-standard-1x) 0;
+    margin: var(--spacing-small-1x) 0;
   }
 
   .buttons {
