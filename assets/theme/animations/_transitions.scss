@@ -1,0 +1,134 @@
+$animation-duration: 250ms;
+$animation-style: cubic-bezier(0.55, 0, 0.1, 1);
+$shift-length: 100px;
+$recoil-length: 20px;
+
+.fade-shift-enter,
+.fade-shift-leave-active {
+  transform: scale(0.99);
+}
+
+.slide-left-enter {
+  transform: translateX($shift-length);
+}
+
+.slide-left-leave-active {
+  transform: translateX(-$recoil-length);
+}
+
+.slide-right-enter {
+  transform: translateX(-$shift-length);
+}
+
+.slide-right-leave-active {
+  transform: translateX($recoil-length);
+}
+
+.slide-up-enter {
+  transform: translateY($shift-length);
+}
+
+.slide-up-leave-active {
+  opacity: 0;
+  transform: translateY(-$recoil-length);
+}
+
+.slide-down-enter {
+  opacity: 1;
+  transform: translateY(-$recoil-length);
+}
+
+.slide-down-leave-active {
+  transform: translateY($shift-length);
+}
+
+.scale-up-enter,
+.scale-up-leave-active {
+  transform: scale(0.95);
+}
+
+.scale-down-enter,
+.scale-down-leave-active {
+  transform: scale(1.05);
+}
+
+.fade-shift-enter-to,
+.fade-shift-enter,
+.fade-shift-enter-active,
+.fade-shift-leave-to,
+.fade-shift-leave,
+.fade-shift-leave-active,
+.slide-left-enter-to,
+.slide-left-enter,
+.slide-left-enter-active,
+.slide-left-leave-to,
+.slide-left-leave,
+.slide-left-leave-active,
+.slide-right-enter-to,
+.slide-right-enter,
+.slide-right-enter-active,
+.slide-right-leave-to,
+.slide-right-leave,
+.slide-right-leave-active,
+.slide-up-enter-to,
+.slide-up-enter,
+.slide-up-enter-active,
+.slide-up-leave-to,
+.slide-up-leave,
+.slide-up-leave-active,
+.slide-down-enter-to,
+.slide-down-enter,
+.slide-down-enter-active,
+.slide-down-leave-to,
+.slide-down-leave,
+.slide-down-leave-active,
+.scale-up-enter-to,
+.scale-up-enter,
+.scale-up-enter-active,
+.scale-up-leave-to,
+.scale-up-leave,
+.scale-up-leave-active,
+.scale-down-enter-to,
+.scale-down-enter,
+.scale-down-enter-active,
+.scale-down-leave-to,
+.scale-down-leave,
+.scale-down-leave-active {
+  transition: all $animation-duration $animation-style !important;
+
+  @media (prefers-reduced-motion) {
+    transition: unset !important;
+  }
+}
+
+.page-enter,
+.page-leave-active,
+.fade-shift-enter,
+.fade-shift-leave-active,
+.slide-left-enter,
+.slide-left-leave-active,
+.slide-right-enter,
+.slide-right-leave-active,
+.slide-up-enter,
+.slide-up-leave-active,
+.slide-down-enter,
+.slide-down-leave-active,
+.scale-up-enter,
+.scale-up-leave-active,
+.scale-down-enter,
+.scale-down-leave-active {
+  opacity: 0;
+}
+
+.page-enter-to,
+.page-enter,
+.page-enter-active,
+.page-leave-to,
+.page-leave,
+.page-leave-active {
+  transition: all $animation-duration $animation-style !important;
+
+  @media (prefers-reduced-motion) {
+    transition: unset !important;
+  }
+}

@@ -1,0 +1,58 @@
+@mixin reset-defaults {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 200ms ease-in-out;
+    -webkit-tap-highlight-color: transparent;
+    
+    @media (prefers-reduced-motion) {
+      transition: unset !important;
+    }
+  }
+}
+
+@mixin html-base-elements {
+  html,
+  body {
+    background: var(--color-body-bg);
+  }
+
+  body {
+    position: relative;
+    overflow-x: hidden;
+    font-family: var(--font-body);
+    color: var(--color-body-text);
+    font-weight: var(--font-body-weight);
+  }
+}
+
+@mixin html-link-elements {
+  a {
+    font-weight: 600;
+    display: inline-block;
+    color: var(--color-primary);
+    padding-inline: var(--spacing-small-1x);
+
+    &:hover,
+    &:focus {
+      background: var(--card-bg);
+      color: var(--color-primary-light);
+      outline: var(--spacing-single) solid var(--body-bg-alternate);
+    }
+  }
+}
+
+@mixin html-blockquote {
+  blockquote {
+    padding: var(--spacing-standard-1x);
+    border-radius: var(--spacing-small-1x);
+    background: var(--color-body-bg-alternate);
+    border-left: var(--spacing-small-1x) solid var(--color-primary);
+
+    cite {
+      color: var(--secondary-color);
+    }
+  }
+}

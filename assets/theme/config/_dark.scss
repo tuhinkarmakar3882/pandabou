@@ -1,0 +1,72 @@
+@mixin dark-primary-color-tones {
+  --primary-hue: 190;
+  --primary-saturation: 88%;
+  --primary-lightness: 36%;
+}
+
+@mixin dark-secondary-color-tones {
+  --secondary-hue: calc(var(--primary-hue) - 16);
+  --secondary-saturation: 88%;
+  --secondary-lightness: 36%;
+}
+
+@mixin dark-font-color-config {
+  --heading-intensity: 96%;
+  --regular-text-intensity: calc(var(--heading-intensity) - 16%);
+  --small-text-intensity: calc(var(--regular-text-intensity) - 16%);
+  --muted-text-intensity: calc(var(--small-text-intensity) - 8%);
+  --monospace-text-intensity: 88%;
+  --monospace-bg-intensity: calc(100% - var(--monospace-text-intensity));
+}
+
+@mixin dark-body-color-base {
+  --body-bg-hue: var(--primary-hue);
+  --body-bg-saturation: 88%;
+  --body-bg-lightness: 3%;
+}
+
+@mixin dark-body-color-alternate {
+  --body-bg-alternate-hue: var(--body-bg-hue);
+  --body-bg-alternate-saturation: var(--body-bg-saturation);
+  --body-bg-alternate-lightness: 8%;
+}
+
+@mixin dark-form-input-config {
+  --input-base-intensity: 6%;
+  --input-hover-intensity: calc(var(--input-base-intensity) + 4%);
+  --input-hover-outline-intensity: calc(var(--input-hover-intensity) + 4%);
+
+  --input-text-saturation: calc(var(--primary-saturation) - 24%);
+  --input-text-intensity: var(--regular-text-intensity);
+
+  --input-placeholder-hue: var(--primary-hue);
+  --input-placeholder-saturation: 24%;
+  --input-placeholder-intensity: var(--muted-text-intensity);
+
+  --input-text-hover-intensity: var(--heading-intensity);
+  --input-accent-intensity: var(--muted-text-intensity);
+
+  --input-bg-hue: var(--primary-hue);
+  --input-bg-saturation: calc(var(--primary-saturation) - 16%);
+}
+
+@mixin dark-form-label-config {
+  --label-text-saturation: 12%;
+  --label-text-intensity: 64%;
+}
+
+@mixin dark-card-item-config {
+  --card-bg-intensity: 16%;
+  --card-bg-saturation: 60%;
+}
+
+@mixin dark-button-text-config {
+  --primary-btn-intensity: 100%;
+  --secondary-btn-intensity: 100%;
+  --default-btn-lightness: 0%;
+}
+
+@mixin dark-miscellenaous-config {
+  --color-fieldset-border: var(--color-input-hover-outline);
+  --color-horizontal-ruler: var(--color-input-hover-outline);
+}

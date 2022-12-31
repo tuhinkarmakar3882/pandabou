@@ -1,0 +1,34 @@
+@import "assets/theme/variables/breakpoints";
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  outline-width: 1px;
+  outline-color: transparent;
+
+  @media (prefers-reduced-motion) {
+    transition: unset !important;
+  }
+}
+
+:root {
+  ::-webkit-scrollbar {
+    height: var(--spacing-zero);
+    width: var(--spacing-zero);
+  }
+
+  @media screen and (min-width: $desktop-screen-size) {
+    ::-webkit-scrollbar {
+      width: var(--spacing-double);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--muted-text-color);
+      border-radius: 0;
+    }
+
+    ::-webkit-scrollbar-thumb:hover,
+    ::-webkit-scrollbar-thumb:active {
+      background: var(--secondary-color-light);
+    }
+  }
+}

@@ -1,0 +1,155 @@
+:root {
+  // Text Color
+  --color-heading-text: hsl(0, 0%, var(--heading-intensity));
+  --color-small-text: hsl(0, 0%, var(--small-text-intensity));
+  --color-body-text: hsl(0, 0%, var(--regular-text-intensity));
+  --color-muted-text: hsl(0, 0%, var(--muted-text-intensity));
+
+  --color-monospace-text: hsl(0, 0%, var(--monospace-text-intensity));
+  --color-monospace-text-bg: hsl(0, 0%, var(--monospace-bg-intensity));
+
+  --color-primary-btn-text: hsl(
+    var(--primary-hue),
+    0%,
+    var(--primary-btn-intensity)
+  );
+  --color-secondary-btn-text: hsl(
+    var(--secondary-hue),
+    0%,
+    var(--secondary-btn-intensity)
+  );
+
+  // Body Color
+  --color-body-bg: hsl(
+    var(--body-bg-hue),
+    var(--body-bg-saturation),
+    var(--body-bg-lightness)
+  );
+  --color-body-bg-alternate: hsl(
+    var(--body-bg-alternate-hue),
+    var(--body-bg-alternate-saturation),
+    var(--body-bg-alternate-lightness)
+  );
+
+  // Color Tones -- Base
+  --color-primary: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    var(--primary-lightness)
+  );
+  --color-secondary: hsl(
+    var(--secondary-hue),
+    var(--secondary-saturation),
+    var(--secondary-lightness)
+  );
+
+  // Color Tones -- Hover/Light
+  --color-primary-light: hsl(
+    var(--primary-hue),
+    var(--primary-saturation),
+    calc(var(--primary-lightness) + 8%)
+  );
+  --color-secondary-light: hsl(
+    var(--secondary-hue),
+    var(--secondary-saturation),
+    calc(var(--secondary-lightness) + 8%)
+  );
+
+  // The Nav Bar -- Base State
+  --color-top-nav-bg: hsl(var(--primary-hue), 60%, 8%);
+  --color-top-nav-link: hsl(var(--primary-hue), 0%, 60%);
+  --color-bottom-nav-bg: var(--nav-bar-bg);
+  --bottom-nav-tab-link: var(--nav-bar-link);
+
+  // The Nav Bar -- Active State
+  --color-top-nav-bg-active: var(--body-bg-alternate);
+  --color-top-nav-link-active: var(--color-secondary);
+  --color-bottom-nav-bg-active: var(--nav-bar-active-bg);
+  --color-bottom-nav-link-active: var(--color-secondary);
+
+  // The Body
+  --body-bg: hsl(var(--primary-hue), 60%, 6%);
+  --body-bg-alternate: hsl(var(--primary-hue), 60%, 10%);
+  --horizontal-rule-color: hsl(var(--primary-hue), 0%, 20%);
+  --semi-transperant-bg: hsla(var(--primary-hue), 0%, 5%, 0.7);
+
+  // Form Inputs
+  --color-input-text: hsl(
+    var(--input-bg-hue),
+    var(--input-text-saturation),
+    var(--input-text-intensity)
+  );
+  --color-input-text-hover: hsl(
+    var(--input-bg-hue),
+    var(--input-text-saturation),
+    var(--input-text-hover-intensity)
+  );
+  --color-input-placeholder: hsl(
+    var(--input-placeholder-hue),
+    var(--input-placeholder-saturation),
+    var(--input-placeholder-intensity)
+  );
+
+  --color-input-accent: hsl(
+    var(--input-bg-hue),
+    var(--input-bg-saturation),
+    var(--input-accent-intensity)
+  );
+
+  --color-input-bg: hsl(
+    var(--primary-hue),
+    var(--input-bg-saturation),
+    var(--input-base-intensity)
+  );
+  --color-input-bg-hover: hsl(
+    var(--primary-hue),
+    var(--input-bg-saturation),
+    var(--input-hover-intensity)
+  );
+  --color-input-hover-outline: hsl(
+    var(--primary-hue),
+    var(--input-bg-saturation),
+    var(--input-hover-outline-intensity)
+  );
+
+  --color-label-text: hsl(
+    var(--primary-hue),
+    var(--label-text-saturation),
+    var(--label-text-intensity)
+  );
+  --color-fieldset-border: var(--color-input-hover-outline);
+  --color-horizontal-ruler: var(--color-input-hover-outline);
+
+  // The Card Colors
+  --card-bg: hsl(
+    var(--primary-hue),
+    var(--card-bg-saturation),
+    var(--card-bg-intensity)
+  );
+  --card-active-bg: hsl(
+    var(--primary-hue),
+    var(--card-bg-saturation),
+    var(--card-bg-intensity)
+  );
+
+  // The btn Defaults
+
+  --default-btn-text-color: hsl(
+    var(--primary-hue),
+    0%,
+    var(--default-btn-lightness)
+  );
+  --default-btn-bg-color: hsl(
+    var(--primary-hue),
+    0%,
+    calc(100% - var(--default-btn-lightness))
+  );
+
+  // Others
+  --default-overlay: hsla(var(--primary-hue), 0%, 0%, 0.48);
+  --color-ripple: hsla(var(--primary-hue), 0%, 100%, 0.25);
+  --default-shadow-color: hsla(var(--primary-hue), 0%, 50%, 0.16);
+
+  // Dropdown
+  --dropdown-bg: hsl(var(--primary-hue), 20%, 20%);
+}

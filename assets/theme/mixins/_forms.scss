@@ -1,0 +1,75 @@
+@mixin form-elements {
+  label {
+    color: var(--color-label-text);
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    border: none;
+    resize: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: var(--spacing-zero);
+    color: var(--color-input-text);
+    background: var(--color-input-bg);
+    padding: var(--spacing-standard-1x);
+    font-family: var(--body-default-font);
+    border-radius: var(--spacing-small-2x);
+    accent-color: var(--color-input-accent);
+    outline: var(--spacing-single) solid transparent;
+
+    &::placeholder {
+      color: var(--color-input-placeholder);
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: var(--color-input-text-hover);
+      background: var(--color-input-bg-hover);
+      box-shadow: 0 0 var(--spacing-small-2x) var(--default-shadow-color);
+    }
+
+    &:focus {
+      outline: var(--spacing-single) solid var(--color-input-hover-outline);
+    }
+  }
+
+  input[type='range'] {
+    padding-inline: 0;
+  }
+
+  input:not([type='radio'], [type='color'], [type='checkbox']) {
+    width: 100%;
+  }
+
+  input[type='radio'],
+  input[type='color'],
+  input[type='checkbox'] {
+    margin-inline: var(--spacing-small-1x);
+  }
+}
+
+@mixin fieldset-styles {
+  fieldset {
+    outline: none;
+    padding: var(--spacing-small-2x);
+    border-radius: var(--spacing-small-1x);
+    border-color: var(--color-fieldset-border);
+
+    legend {
+      color: var(--color-muted-text);
+      padding-inline: var(--spacing-standard-1x);
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+}

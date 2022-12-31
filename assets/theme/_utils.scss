@@ -1,0 +1,51 @@
+.muted {
+  color: var(--color-muted-text);
+}
+
+.primary {
+  color: var(--color-primary);
+}
+
+.secondary {
+  color: var(--color-secondary);
+}
+
+.primary-light {
+  color: var(--color-primary-light);
+}
+
+.secondary-light {
+  color: var(--color-secondary-light);
+}
+
+.accent-overline,
+.accent-underline {
+  position: relative;
+
+  &::after {
+    left: 0;
+    content: "";
+    position: absolute;
+    height: var(--spacing-small-1x);
+    background: var(--color-primary);
+    width: var(--spacing-max);
+  }
+}
+
+.accent-overline::after {
+  top: -8px;
+}
+
+.accent-underline::after {
+  bottom: -8px;
+}
+
+.text-center {
+  display: inline-block;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  gap: var(--spacing-standard-1x);
+}

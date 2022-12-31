@@ -1,28 +1,34 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+@import 'assets/theme/utils';
+@import 'assets/theme/config';
+@import 'assets/theme/accessibility';
 
-:root {
-  --color-ripple: hsl(0 0% 60% / 0.37);
+@import 'assets/theme/variables/fonts';
+@import 'assets/theme/variables/colors';
+@import 'assets/theme/variables/spacing';
+@import 'assets/theme/variables/breakpoints';
 
-  --spacing-standard-1x: 1rem;
-}
+@import 'assets/theme/mixins/base';
+@import 'assets/theme/mixins/forms';
+@import 'assets/theme/mixins/buttons';
+@import 'assets/theme/mixins/font_styles';
+@import 'assets/theme/mixins/miscellaneous';
 
-body, html {
-  color: hsl(0 0% 29%);
-  font-family: sans-serif;
-  font-weight: 300;
-}
+@import 'assets/theme/animations/skeletons';
+@import 'assets/theme/animations/transitions';
 
-h1, h2, h3, h4, h5, h6 {
-  color: black;
-  font-family: serif;
-  font-weight: 500;
-}
+@include reset-defaults;
+@include html-base-elements;
 
-button {
-  padding: 1rem 1.5rem;
-  cursor: pointer;
-}
+@include heading-fonts;
+@include body-fonts;
+@include monospace-fonts;
+
+@include html-link-elements;
+@include button-styles;
+
+@include form-elements;
+@include fieldset-styles;
+
+@include html-blockquote;
+@include miscellaneous-styles;
+

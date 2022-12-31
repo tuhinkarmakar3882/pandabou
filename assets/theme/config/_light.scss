@@ -1,0 +1,72 @@
+@mixin light-primary-color-tones {
+  --primary-hue: 190;
+  --primary-saturation: 88%;
+  --primary-lightness: 28%;
+}
+
+@mixin light-secondary-color-tones {
+  --secondary-hue: calc(var(--primary-hue) - 20);
+  --secondary-saturation: 88%;
+  --secondary-lightness: 32%;
+}
+
+@mixin light-font-color-config {
+  --heading-intensity: 0%;
+  --regular-text-intensity: calc(var(--heading-intensity) + 16%);
+  --small-text-intensity: calc(var(--regular-text-intensity) + 16%);
+  --muted-text-intensity: calc(var(--small-text-intensity) + 8%);
+  --monospace-text-intensity: 12%;
+  --monospace-bg-intensity: calc(100% - var(--monospace-text-intensity));
+}
+
+@mixin light-body-color-base {
+  --body-bg-hue: var(--primary-hue);
+  --body-bg-saturation: 36%;
+  --body-bg-lightness: 96%;
+}
+
+@mixin light-body-color-alternate {
+  --body-bg-alternate-hue: var(--body-bg-hue);
+  --body-bg-alternate-saturation: var(--body-bg-saturation);
+  --body-bg-alternate-lightness: calc(var(--body-bg-lightness) - 8%);
+}
+
+@mixin light-form-input-config {
+  --input-base-intensity: 92%;
+  --input-hover-intensity: calc(var(--input-base-intensity) - 8%);
+  --input-hover-outline-intensity: calc(var(--input-hover-intensity) - 8%);
+
+  --input-text-saturation: 40%;
+  --input-text-intensity: calc(var(--regular-text-intensity) + 4%);
+
+  --input-placeholder-hue: var(--primary-hue);
+  --input-placeholder-saturation: 24%;
+  --input-placeholder-intensity: var(--muted-text-intensity);
+
+  --input-text-hover-intensity: var(--heading-intensity);
+  --input-accent-intensity: var(--muted-text-intensity);
+
+  --input-bg-hue: var(--primary-hue);
+  --input-bg-saturation: calc(var(--primary-saturation) - 24%);
+}
+
+@mixin light-form-label-config {
+  --label-text-saturation: 16%;
+  --label-text-intensity: 40%;
+}
+
+@mixin light-card-item-config {
+  --card-bg-intensity: 92%;
+  --card-bg-saturation: 60%;
+}
+
+@mixin light-button-text-config {
+  --primary-btn-intensity: 100%;
+  --secondary-btn-intensity: 100%;
+  --default-btn-lightness: 100%;
+}
+
+@mixin light-miscellenaous-config {
+  --color-fieldset-border: var(--color-input-hover-outline);
+  --color-horizontal-ruler: var(--color-input-hover-outline);
+}

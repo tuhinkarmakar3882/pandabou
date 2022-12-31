@@ -1,0 +1,54 @@
+@import 'assets/theme/config/dark';
+@import 'assets/theme/config/light';
+
+:root {
+  @include light-primary-color-tones;
+  @include light-secondary-color-tones;
+  @include light-font-color-config;
+  @include light-body-color-base;
+  @include light-body-color-alternate;
+  @include light-form-input-config;
+  @include light-form-label-config;
+  @include light-card-item-config;
+  @include light-button-text-config;
+  @include light-miscellenaous-config;
+
+  @media (prefers-color-scheme: dark) {
+    @include dark-primary-color-tones;
+    @include dark-secondary-color-tones;
+    @include dark-font-color-config;
+    @include dark-body-color-base;
+    @include dark-body-color-alternate;
+    @include dark-form-input-config;
+    @include dark-form-label-config;
+    @include dark-card-item-config;
+    @include dark-button-text-config;
+    @include dark-miscellenaous-config;
+  }
+}
+
+.light-theme {
+  @include light-primary-color-tones;
+  @include light-secondary-color-tones;
+  @include light-font-color-config;
+  @include light-body-color-base;
+  @include light-body-color-alternate;
+  @include light-form-input-config;
+  @include light-form-label-config;
+  @include light-card-item-config;
+  @include light-button-text-config;
+  @include light-miscellenaous-config;
+}
+
+.dark-theme {
+  @include dark-primary-color-tones;
+  @include dark-secondary-color-tones;
+  @include dark-font-color-config;
+  @include dark-body-color-base;
+  @include dark-body-color-alternate;
+  @include dark-form-input-config;
+  @include dark-form-label-config;
+  @include dark-card-item-config;
+  @include dark-button-text-config;
+  @include dark-miscellenaous-config;
+}

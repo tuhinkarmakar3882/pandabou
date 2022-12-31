@@ -1,0 +1,46 @@
+$base-tone: var(--color-nav-bar-bg);
+$intermediate-tone: var(--color-body-bg-alternate);
+$active-highlight-tone: var(--color-primary-color);
+
+$skeleton-bg-highlight: linear-gradient(
+                45deg,
+                transparent 0%,
+                $base-tone 17%,
+                $intermediate-tone 34%,
+                $active-highlight-tone 50%,
+                $intermediate-tone 68%,
+                $base-tone 85%,
+                transparent 100%
+) right no-repeat;
+
+
+.skeleton-loader {
+  border-radius: 4px;
+  animation: swift 2.5s ease-in-out infinite alternate;
+  background: $skeleton-bg-highlight;
+  background-size: 400%;
+
+  @media (prefers-reduced-motion) {
+    background: $base-tone;
+    background-size: 100%;
+    animation: glow 1.5s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes swift {
+  from {
+    background-position: right;
+  }
+  to {
+    background-position: left;
+  }
+}
+
+@keyframes glow {
+  0% {
+    background-color: $base-tone;
+  }
+  100% {
+    background-color: $active-highlight-tone;
+  }
+}

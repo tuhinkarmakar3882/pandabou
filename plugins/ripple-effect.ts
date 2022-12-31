@@ -208,7 +208,7 @@ export default defineNuxtPlugin((nuxtApp) => {
       const defaultProps: IDefaultProps = {
         zIndex: "9999",
         transition: 350,
-        bg: binding.value || "var(--color-ripple, #3a3a3a1a)",
+        bg: binding.value || "var(--color-ripple)",
       };
 
       htmlElement.addEventListener("mousedown", (event: MouseEvent) => {

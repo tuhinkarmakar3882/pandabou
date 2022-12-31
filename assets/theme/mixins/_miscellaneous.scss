@@ -1,0 +1,20 @@
+@mixin miscellaneous-styles {
+  img {
+    object-fit: cover;
+  }
+
+  hr {
+    border: none;
+    outline: none;
+    height: var(--spacing-single);
+    background: var(--color-horizontal-ruler);
+    margin: var(--spacing-standard-1x) var(--spacing-zero);
+  }
+
+  del {
+    line-height: 1;
+    color: var(--color-muted-text);
+    text-decoration-thickness: from-font;
+    text-decoration: line-through var(--color-muted-text);
+  }
+}
