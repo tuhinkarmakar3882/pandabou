@@ -7,11 +7,16 @@ export default defineNuxtConfig({
   app: {
     head: {
       charset: "utf-16",
-      viewport: "width=500, initial-scale=1",
+      viewport:
+        "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0",
       meta: [
         {
           name: "description",
           content: "Send & Receive Anonymous Messages on Pandabou",
+        },
+        {
+          "http-equiv": "X-UA-Compatible",
+          content: "ie=edge",
         },
       ],
       link: [
