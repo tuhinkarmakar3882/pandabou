@@ -56,10 +56,10 @@
   );
 
   // The Nav Bar -- Base State
-  --color-top-nav-bg: hsl(var(--primary-hue), 60%, 8%);
+  --color-top-nav-bg: hsl(var(--primary-hue), 60%, 92%);
   --color-top-nav-link: hsl(var(--primary-hue), 0%, 60%);
-  --color-bottom-nav-bg: var(--nav-bar-bg);
-  --bottom-nav-tab-link: var(--nav-bar-link);
+  --color-bottom-nav-bg: var(--color-top-nav-bg);
+  --bottom-nav-tab-link: var(--color-top-nav-link);
 
   // The Nav Bar -- Active State
   --color-top-nav-bg-active: var(--body-bg-alternate);
