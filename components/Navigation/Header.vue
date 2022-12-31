@@ -1,6 +1,6 @@
 <template>
   <header>
-    <img src="https://picsum.photos/36" alt="Pandabou Website Logo" />
+    <img alt="Pandabou Website Logo" src="https://picsum.photos/36" />
 
     <p>PandaBou</p>
 

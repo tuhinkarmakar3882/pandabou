@@ -2,7 +2,9 @@
   <div class="default-layout">
     <NavigationHeader />
 
-    <main><slot /></main>
+    <main>
+      <slot />
+    </main>
 
     <NavigationFooter />
   </div>
